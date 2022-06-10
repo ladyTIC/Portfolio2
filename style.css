@@ -224,7 +224,8 @@ section .title::after{
     height: 400px;
     width: 400px;
     object-fit: cover;
-    border-radius: 6px;
+    border-radius: 60px;
+    
 }
 .about .about-content .right{
     width: 55%;
@@ -258,16 +259,16 @@ section .title::after{
 }
 
 /* services section styling */
-.services, .teams{
+.services, .project{
     color:#fff;
     background: #111;
 }
 .services .title::before,
-.teams .title::before{
+.project .title::before{
     background: #fff;
 }
 .services .title::after,
-.teams .title::after{
+.project .title::after{
     background: #111;
     content: "what i provide";
 }
@@ -377,12 +378,18 @@ section .title::after{
 .skills-content .right .wp::before{
     width: 85%;
 }
+.skills-content .right .ng::before{
+    width: 85%;
+}
+.skills-content .right .ws::before{
+    width: 55%;
+}
 
-/* teams section styling */
-.teams .title::after{
+/* projects section styling */
+.project .title::after{
     content: "who with me";
 }
-.teams .carousel .card{
+.project .carousel .card{
     background: #222;
     border-radius: 6px;
     padding: 25px 35px;
@@ -390,25 +397,25 @@ section .title::after{
     overflow: hidden;
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover{
+.project .carousel .card:hover{
     background: rgb(231, 76, 20);
 }
-.teams .carousel .card .box{
+.project .carousel .card .box{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover .box{
+.project .carousel .card:hover .box{
     transform: scale(1.05);
 }
-.teams .carousel .card .text{
+.project .carousel .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
-.teams .carousel .card img{
+.project .carousel .card img{
     height: 150px;
     width: 150px;
     object-fit: cover;
@@ -416,7 +423,7 @@ section .title::after{
     border: 5px solid rgb(231, 76, 20);
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover img{
+.project .carousel .card:hover img{
     border-color: #fff;
 }
 .owl-dots{
