@@ -26,8 +26,8 @@ btn.addEventListener('click', function (e) {
         Subject: objet,
         Body: body,
     }).then(
-      //  message => alert('message envoyer')
-        console.log('ok')
+        message => alert('message envoyer')
+        // console.log('ok')
     )
     removeItems();
 })
